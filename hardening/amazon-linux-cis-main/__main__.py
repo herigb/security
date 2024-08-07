@@ -593,11 +593,11 @@ def main():
     # 5 Access, Authentication and Authorization
     configure_cron()
     configure_sshd()
-    if not args.disable_pam:
-        configure_pam()
+    #if not args.disable_pam:
+    #    configure_pam()
     configure_password_parmas()
     configure_umask()
-    configure_su()
+    #configure_su()
 
 
 if __name__ == '__main__':
