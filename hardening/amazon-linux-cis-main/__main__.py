@@ -501,10 +501,10 @@ def configure_umask():
     File('/etc/profile').write(profile)
 
 
-def configure_su():
-    """5.5 Ensure access to the su command is restricted"""
-    File('/etc/pam.d/su').write(get_string_asset('/etc/pam.d/su'))
-    exec_shell('usermod -aG wheel root')
+#def configure_su():
+#    """5.5 Ensure access to the su command is restricted"""
+#    File('/etc/pam.d/su').write(get_string_asset('/etc/pam.d/su'))
+#    exec_shell('usermod -aG wheel root')
 
 
 def main():
